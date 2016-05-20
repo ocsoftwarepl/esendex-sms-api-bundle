@@ -1,0 +1,24 @@
+{
+  "name": "ocsoftwarepl/esendex-sms-api-bundle",
+  "description": "bundle esendex-sms-api",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "bf"
+    }
+  ],
+  "keywords": [
+    "sms esendex"
+  ],
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "esendex/sdk": "1.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "OCSoftwarePL\\EsendexSmsApiBundle\\": ""
+    }
+  }
+}
