@@ -21,7 +21,7 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('ocs_esendex_smsapi');
 
         $rootNode->children()
-            ->scalarNode('premium_sender_name')->defaultNull()
+            ->scalarNode('sender_name')->defaultNull()->end()
             ->scalarNode('username')->isRequired()->end()
             ->scalarNode('password')->isRequired()->end()
             ->scalarNode('account_reference')->isRequired()->end()
