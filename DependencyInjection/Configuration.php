@@ -18,11 +18,14 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('ocs_esendex_sms_api');
+        $rootNode = $treeBuilder->root('ocs_esendex_smsapi');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode->children()
+            ->scalarNode('premium_sender_name')->defaultNull()
+            ->scalarNode('username')->isRequired()->end()
+            ->scalarNode('password')->isRequired()->end()
+            ->scalarNode('account_reference')->isRequired()->end()
+            ->end();
 
         return $treeBuilder;
     }
