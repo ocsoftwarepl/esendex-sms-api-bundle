@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('ocs_esendex_smsapi');
+        $rootNode = $treeBuilder->root('ocs_esendex_sms_api');
 
         $rootNode->children()
             ->scalarNode('sender_name')->defaultNull()->end()
