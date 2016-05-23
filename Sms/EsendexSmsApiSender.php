@@ -18,7 +18,7 @@ class EsendexSmsApiSender
     public function __construct(array $config)
     {
         $this->config = $config;
-        $this->senderName = $config['premium_sender_name'];
+        $this->senderName = $config['sender_name'];
     }
 
     protected function getApi()
