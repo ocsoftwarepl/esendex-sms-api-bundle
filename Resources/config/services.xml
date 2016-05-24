@@ -6,7 +6,7 @@
 
     <services>
         <service id="ocs_pl.esendex_sms_api_sender" class="OCSoftwarePL\EsendexSmsApiBundle\Sms\EsendexSmsApiSender">
-            <argument>%ocs_sms_api.config%</argument>
+            <argument>%ocs_esendex_sms_api.config%</argument>
         </service>
     </services>
 
